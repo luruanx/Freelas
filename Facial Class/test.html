@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perguntas Frequentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 40px;
+        }
+
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-radius: 10px;
+            margin-bottom: 5px;
+            box-shadow: 0 2px 8px #0000000d;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+            background: #000000d0;
+            font-weight: bold;
+            position: relative;
+            transition: background 0.3s ease;
+            color: var(--color-primary);
+        }
+
+        .faq-question:hover {
+            background: #131313;
+        }
+
+        .faq-question::after {
+            content: '▶';
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            color: var(--color-black);
+            line-height: 120%;
+            font-size: .8rem;
+            background: var(--color-bg);
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        input[type="checkbox"]:checked~.faq-answer {
+            max-height: 300px;
+            padding: 15px 20px 20px;
+        }
+
+        input[type="checkbox"]:checked+label::after {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <input type="checkbox" id="faq1">
+            <label class="faq-question" for="faq1">Como funciona o acesso ao curso?</label>
+            <div class="faq-answer">
+                <p>Após a inscrição, você terá acesso imediato à plataforma, podendo assistir às aulas quando e onde
+                    quiser, pelo computador, celular ou tablet.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2">
+            <label class="faq-question" for="faq2">O certificado é reconhecido?</label>
+            <div class="faq-answer">
+                <p>Sim! Ao concluir o curso Expert em Lábios 2.0, você recebe um certificado que comprova sua
+                    participação e aprendizado.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3">
+            <label class="faq-question" for="faq3">Quais formas de pagamento são aceitas?</label>
+            <div class="faq-answer">
+                <p>Aceitamos diversas formas de pagamento, incluindo cartão de crédito, boleto bancário e PIX,
+                    garantindo flexibilidade para você.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

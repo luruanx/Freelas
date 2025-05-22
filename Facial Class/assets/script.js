@@ -26,3 +26,25 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// Section FAQ
+const faqInputs = document.querySelectorAll('.faq-item input');
+faqInputs.forEach((input) => {
+  input.addEventListener('change', () => {
+    if (input.checked) {
+      faqInputs.forEach((otherInput) => {
+        if (otherInput !== input) { otherInput.checked = false; }
+      });
+    }
+  });
+});
+
+// Fechar todas as perguntas ao clicar fora 
+document.addEventListener('click', function (e) {
+  const faqContainer = document.querySelector('.faq-container');
+  if (!faqContainer.contains(e.target)) {
+    faqInputs.forEach((input) => {
+      input.checked = false;
+    });
+  }
+});

@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -207,18 +208,18 @@ header {
 .img-box-2,
 .img-box-3 {
   width: 100%;
-  background-image: url(https://pages.greatpages.com.br/lp.facialacademy.com.br-facialclass/1747319529/imagens/desktop/455502_1_170662930303817257.webp);
+  background-image: url(img/card-1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 20px;
 }
 .img-box-2 {
-  background-image: url(https://pages.greatpages.com.br/lp.facialacademy.com.br-facialclass/1747319529/imagens/desktop/455502_1_14439.webp);
+  background-image: url(img/card-2.webp);
   background-repeat: no-repeat;
 }
 .img-box-3 {
-  background-image: url(https://pages.greatpages.com.br/lp.facialacademy.com.br-facialclass/1747319529/imagens/desktop/455502_1_48732.webp);
+  background-image: url(img/card-3.webp);
   background-repeat: no-repeat;
 }
 .text-box-2 {

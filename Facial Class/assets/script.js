@@ -1,5 +1,4 @@
 // Initialize Swiper
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -27,24 +26,31 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Section FAQ
-const faqInputs = document.querySelectorAll('.faq-item input');
-faqInputs.forEach((input) => {
-  input.addEventListener('change', () => {
-    if (input.checked) {
-      faqInputs.forEach((otherInput) => {
-        if (otherInput !== input) { otherInput.checked = false; }
+//Section GRADE Aula
+const faqContainers = document.querySelectorAll('.faq-container');
+
+faqContainers.forEach((faqContainer) => {
+  const faqInputs = faqContainer.querySelectorAll('.faq-item input');
+
+  // Alternar as perguntas dentro do mesmo bloco
+  faqInputs.forEach((input) => {
+    input.addEventListener('change', () => {
+      if (input.checked) {
+        faqInputs.forEach((otherInput) => {
+          if (otherInput !== input) {
+            otherInput.checked = false;
+          }
+        });
+      }
+    });
+  });
+
+  // Fechar perguntas ao clicar fora do bloco específico
+  document.addEventListener('click', function (e) {
+    if (!faqContainer.contains(e.target)) {
+      faqInputs.forEach((input) => {
+        input.checked = false;
       });
     }
   });
-});
-
-// Fechar todas as perguntas ao clicar fora 
-document.addEventListener('click', function (e) {
-  const faqContainer = document.querySelector('.faq-container');
-  if (!faqContainer.contains(e.target)) {
-    faqInputs.forEach((input) => {
-      input.checked = false;
-    });
-  }
 });

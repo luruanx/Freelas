@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #9435e2;
+    --color-secondary: #3C0A6B;
+    --color-highlight: #A41AA3;
+    --color-bg: #ccc2f8;
+    --color-bg-dark: #11012B;
+    --color-white: #fdfdfd;
+    --color-black: #060606;
+
+    --fonte-main: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--fonte-main);
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--fonte-main);
+}
+
+/* UTILITIES */
+.container {
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 70px 20px;
+}
+.button-full {
+    background-color: var(--color-highlight);
+    display: inline-block;
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 15px 82px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-black);
+    border-radius: 30px;
+
+    content: '';
+    width: 200px;
+    height: 50px;
+    display: block;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+/* HEADER */
+header {
+    background-image: url(img/banner-desktop.avif);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid var(--color-primary);
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    padding: 20px 20px;
+}
+.header-logo {
+    width: 250px;
+}
+.header-box img {
+    width: 100%;
+}
+.header-box > h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 90%;
+    width: 600px;
+    margin-bottom: 50px;
+}
+.header-box > h1 > span {
+    color: var(--color-primary);
+}
+.header-desc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-desc p {
+    font-size: 2rem;
+}

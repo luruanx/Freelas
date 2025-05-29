@@ -6,10 +6,10 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
     breakpoints: {
         640: {
             slidesPerView: 1,

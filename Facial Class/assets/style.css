@@ -44,10 +44,20 @@ body {
   text-decoration: none;
   color: var(--color-black);
   border-radius: 30px;
+  animation: pular 1s ease-in-out infinite;
 }
 .button-full:hover {
-  background-color: #e4b859;
-  transition: all 300ms;
+    background-color: #252524;
+    color: var(--color-highlight);
+}
+
+@keyframes pular {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* HEADER */
@@ -326,7 +336,7 @@ header {
   margin-bottom: 10px;
 }
 .four-desc-text {
-  padding-right: 100px;
+  padding-right: 80px;
   display: flex;
   flex-direction: column;
   gap: 30px;

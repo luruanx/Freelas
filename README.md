@@ -12,8 +12,8 @@ Sinta-se à vontade para explorar, clonar ou se inspirar! 🤓
 
 | Projeto | Descrição | Deploy |
 |---------|----------|-------|
-| [📚 Facial Class ](Facial%20Class/) | Landing page para assinatura da Plataforma Facial Class | [Ver online](https://facialclass.cupompremium.com/) |
-| [👨🏻‍⚕️ Monteze 7D ](Monteze7D) | Landing page para compra do ingresso do Método7D | [Ver online](https://drmonteze.cupompremium.com/) |
+| [📚 Facial Class ](Facial%20Class/) | Landing page para assinatura da Plataforma Facial Class | [Ver online](https://luruanx.github.io/Portifolio/assets/Facial%20Class/index.html) |
+| [👨🏻‍⚕️ Monteze 7D ](Monteze7D) | Landing page para compra do ingresso do Método7D | [Ver online](https://luruanx.github.io/Portifolio/assets/Monteze7D/index.html) |
 
 ---
 
